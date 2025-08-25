@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <title>Pipper</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
+  <meta charset="UTF-8">
+  <title>Pipper</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Pipper feed</h1>
 
+  <!-- Her viser vi brugerens navn eller et input hvis man ikke har valgt -->
+  <div id="userBar">
+    <span>Indlæser bruger…</span>
+  </div>
+
+  <h1>Pipper feed</h1>
+
+  <!-- Formular til at skrive en ny pip -->
+  <form id="pipForm">
+    <input type="text" id="pipInput" placeholder="Skriv din pip..." required>
+    <button type="submit">Send</button>
+  </form>
+
+  <!-- Feed med pips -->
+  <div id="feed">
     <div class="pip">
-        <strong>Dayan:</strong> Mit første pip!
+      <strong>Dayan:</strong> Mit første pip!
     </div>
-
     <div class="pip">
-        <strong>Mads:</strong> Jeg elsker pipper 😎
+      <strong>Mads:</strong> Jeg elsker pipper 😎
     </div>
+  </div>
 
-    <div class="pip">
-        <strong>Sara:</strong> Glæder mig til at prøve databasen!
-    </div>
-
+  <script src="script.js"></script>
 </body>
 </html>

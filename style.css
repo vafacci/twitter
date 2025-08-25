@@ -1,8 +1,31 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    }
- .pip {
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-    }
+    max-width: 700px;
+    margin: 24px auto;
+    padding: 0 12px;
+  }
+  
+  #userBar {
+    background: #f4f4f4;
+    padding: 10px 12px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .pip {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 12px 0;
+  }
+  #pipForm {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  #pipInput {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+    
