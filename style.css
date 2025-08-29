@@ -31,4 +31,36 @@ body {
     border-radius: 8px;
     border: 1px solid #ddd;
   }
-    
+  aside {
+    width: 180px;
+    height: 100vh;           /* fylder hele højden */
+    background: #111;        /* mørk baggrund */
+    position: fixed;         /* fast i venstre side */
+    left: 0;
+    top: 0;
+    padding: 20px;
+  }
+
+
+  nav {
+    display: flex;
+    flex-direction: column;  /* gør det vertical */
+    gap: 10px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  nav a:hover {
+    background: #333;        /* hover effekt */
+  }
+
+  /* Content til højre for nav */
+  main {
+    margin-left: 200px;
+    padding: 20px;
+  }
