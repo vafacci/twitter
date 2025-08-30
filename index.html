@@ -2,50 +2,53 @@
 <html lang="da">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/aod1ett.css">
+    <link rel="icon" type="image/x-icon" href="./img/twitter.svg" />
     <title>Pipper</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
-<aside class="venstre">
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Home</a>
-      <a href="#">Home</a>
-      <a href="#">Home</a>
-    </nav>
-</aside>
-
-<main>
- 
-    <div class="midten">
-      <!-- Her viser vi brugerens navn eller et input hvis man ikke har valgt -->
-      <div id="userBar">
-        <span>Indlæser bruger…</span>
+    <aside class="venstre">
+      <div class="logo">
+        <img src="./img/twitter.svg" alt="pipper_logo" />
+        <h1 class="logo_navn">PIPPER</h1>
       </div>
+      <nav>
+        <a href="#">Hjem</a>
+        <a href="#">Notifikation</a>
+        <a href="#">Trends</a>
+        <a href="#">Søg</a>
+      </nav>
+    </aside>
 
-      <h1>Pipper feed</h1>
+    <main>
+      <div class="midten">
+        <!-- Her viser vi brugerens navn eller et input hvis man ikke har valgt -->
+        <div id="userBar">
+          <span>Indlæser bruger…</span>
+        </div>
 
-      <!-- Formular til at skrive en ny pip -->
-      <form id="pipForm">
-        <input
-          type="text"
-          id="pipInput"
-          placeholder="Skriv din pip..."
-          required
-        />
-        <button type="submit">Send</button>
-      </form>
+        <h1>Pipper feed</h1>
 
-      <!-- Feed med pips -->
-      <div id="feed">
-        <div class="pip"><strong>Dayan:</strong> Mit første pip!</div>
-        <div class="pip"><strong>Mads:</strong> Jeg elsker pipper 😎</div>
+        <!-- Formular til at skrive en ny pip -->
+        <form id="pipForm">
+          <input
+            type="text"
+            id="pipInput"
+            placeholder="Skriv din pip..."
+            required
+          />
+          <button type="submit">Send</button>
+        </form>
+
+        <!-- Feed med pips -->
+        <div id="feed">
+          <div class="pip"><strong>Dayan:</strong> Mit første pip!</div>
+          <div class="pip"><strong>Mads:</strong> Jeg elsker pipper 😎</div>
+        </div>
       </div>
-    </div>
-
-</main>  
+    </main>
 
     <script src="script.js"></script>
   </body>

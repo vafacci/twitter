@@ -1,66 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 24px auto;
-    padding: 0 12px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 24px auto;
+  padding: 0 12px;
+}
 
-  .overst{
-    background-color: #f4f4f4;
-  }
-  
-  #userBar {
-    background: #f4f4f4;
-    padding: 10px 12px;
-    border-radius: 12px;
-    margin-bottom: 16px;
-  }
-  
-  .pip {
-    border-bottom: 1px solid #e5e5e5;
-    padding: 12px 0;
-  }
-  #pipForm {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 20px;
-  }
-  
-  #pipInput {
-    flex: 1;
-    padding: 8px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-  }
-  aside {
-    width: 180px;
-    height: 100vh;           /* fylder hele højden */
-    background: #111;        /* mørk baggrund */
-    position: fixed;         /* fast i venstre side */
-    left: 0;
-    top: 0;
-    padding: 20px;
-  }
+.overst {
+  background-color: #f4f4f4;
+}
 
+#userBar {
+  background: #f4f4f4;
+  padding: 10px 12px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
 
-  nav {
-    display: flex;
-    flex-direction: column;  /* gør det vertical */
-    gap: 10px;
-  }
+.pip {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 12px 0;
+}
+#pipForm {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
 
-  nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 6px;
-  }
+#pipInput {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+aside {
+  width: 150px;
+  height: 100vh; /* fylder hele højden */
+  background-color: lightblue; /* mørk baggrund */
+  position: fixed; /* fast i venstre side */
+  left: 0;
+  top: 0;
+  padding: 20px;
+}
 
-  nav a:hover {
-    background: #333;        /* hover effekt */
-  }
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
 
-  /* Content til højre for nav */
-  main {
-    margin-left: 200px;
-    padding: 20px;
-  }
+.logo img {
+  margin-right: 20px;
+  margin-left: 5px;
+}
+
+.logo_navn {
+  font-weight: 200;
+}
+
+nav {
+  display: flex;
+  flex-direction: column; /* gør det vertical */
+  gap: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background: #333; /* hover effekt */
+}
+
+/* Content til højre for nav */
+main {
+  margin-left: 200px;
+  padding: 20px;
+}
