@@ -35,6 +35,7 @@ body{ margin:0; overflow:hidden; }
   display: flex;
   gap: 8px;
   margin-bottom: 20px;
+  flex-direction: column;
 }
 
 #pipInput {
@@ -98,6 +99,8 @@ nav a:hover {
   background:#fff;
   border-right: 1px solid #eee;
   z-index: 2;
+  flex-direction: column;
+  display: flex;
 }
 .feed{
   position: fixed;

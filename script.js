@@ -1,30 +1,24 @@
-const LS_KEY = "pips_username";
-const FEED_ID = "feed";
+document.getElementById("pipForm").addEventListener("submit", (event) => {
+event.preventDefault()
+
+const name = document.getElementById("usernameInput").value
+const pipInput = document.getElementById("pipInput").value
+
+if (name !== "" && pipInput !=="") {
+  
+let  piptemplate = document.getElementById("piptemplate").content.cloneNode(true)  
+piptemplate.querySelector(".pip").innerText = document.getElementById("pipInput").value
+piptemplate.querySelector(".username").innerText = document.getElementById("usernameInput").value
 
 
 
-// Funktion til at tilføje en pip i feedet
-function addPip(username, text) {
-  const feed = document.getElementById(FEED_ID);
-  const pipDiv = document.createElement("div");
-  pipDiv.classList.add("pip");
-  pipDiv.innerHTML = `<strong>${username}:</strong> ${text}`;
-  feed.prepend(pipDiv); // nyeste øverst
+document.getElementById("feed").appendChild(piptemplate);
+console.log(piptemplate)
+
+} else {
+  alert("udfyld navn")
 }
 
-// Håndter formularen til pips
-document.getElementById("pipForm").addEventListener("submit", (e) => {
-  e.preventDefault();
-  const username = localStorage.getItem(LS_KEY);
-  const input = document.getElementById("pipInput");
-  const text = input.value.trim();
 
 
-
-  addPip(username, text);
-  input.value = ""; // ryd feltet
-});
-
-// Første load → tjek om bruger allerede har navn
-const existing = localStorage.getItem(LS_KEY);
-renderBar(existing);
+})
