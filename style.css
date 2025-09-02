@@ -117,3 +117,31 @@ nav a:hover {
 .post form{ display:flex; gap:8px; }
 .post input{ flex:1; padding:10px; border:1px solid #ddd; border-radius:8px; }
 .post button{ padding:10px 14px; border:0; border-radius:8px; cursor:pointer; }
+
+
+#feed {
+  max-width: 520px;              /* valgfrit: gør linjelængden rar */
+}
+
+/* Hvert pip-blok */
+.pip-container {
+  padding: 10px 0;               /* luft omkring indholdet */
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* Fjern streg efter sidste */
+.pip-container:last-child {
+  border-bottom: none;
+}
+
+/* Typografi */
+.username {
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.message {
+  margin: 0;
+  line-height: 1.5;
+  color: #444;
+}

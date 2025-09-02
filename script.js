@@ -1,24 +1,24 @@
 document.getElementById("pipForm").addEventListener("submit", (event) => {
-event.preventDefault()
+  event.preventDefault();
 
-const name = document.getElementById("usernameInput").value
-const pipInput = document.getElementById("pipInput").value
+  const name = document.getElementById("usernameInput").value.trim();
+  const pipText = document.getElementById("pipInput").value.trim();
 
-if (name !== "" && pipInput !=="") {
-  
-let  piptemplate = document.getElementById("piptemplate").content.cloneNode(true)  
-piptemplate.querySelector(".pip").innerText = document.getElementById("pipInput").value
-piptemplate.querySelector(".username").innerText = document.getElementById("usernameInput").value
+  if (!name || !pipText) {
+    alert("Udfyld både navn og pip.");
+    return;
+  }
 
+  // Klon template
+  const pipFrag = document.getElementById("piptemplate").content.cloneNode(true);
 
+  // Sæt @ foran brugernavn + brug nye klassenavne
+  pipFrag.querySelector(".username").textContent = `@${name}`;
+  pipFrag.querySelector(".message").textContent = pipText;
 
-document.getElementById("feed").appendChild(piptemplate);
-console.log(piptemplate)
+  // Tilføj til feed
+  document.getElementById("feed").appendChild(pipFrag);
 
-} else {
-  alert("udfyld navn")
-}
-
-
-
-})
+  // Ryd felter
+  document.getElementById("pipInput").value = "";
+});
