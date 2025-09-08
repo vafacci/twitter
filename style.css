@@ -84,7 +84,8 @@ nav a {
 }
 
 nav a:hover {
-  background: #333; /* hover effekt */
+  background: white; /* hover effekt */
+  color: black;
 }
 
 

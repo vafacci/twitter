@@ -13,7 +13,7 @@ document.getElementById("pipForm").addEventListener("submit", (event) => {
   const pipFrag = document.getElementById("piptemplate").content.cloneNode(true);
 
   const seed = Math.random().toString(36).substring(2, 10); 
-  const avatarUrl = `https://api.dicebear.com/9.x/notionists/svg?seed=${seed}`;
+  const avatarUrl = `https://api.dicebear.com/9.x/notionists/svg?seed=${name}`;
   pipFrag.querySelector(".avatar").src = avatarUrl;
 
   // Sæt @ foran brugernavn + brug nye klassenavne
