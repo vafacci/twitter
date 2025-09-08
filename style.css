@@ -47,7 +47,7 @@ body{ margin:0; overflow:hidden; }
 aside {
   width: 150px;
   height: 100vh; /* fylder hele højden */
-  background-color: darkslategray; /* mørk baggrund */
+  background-color: black; /* mørk baggrund */
   position: fixed; /* fast i venstre side */
   left: 0;
   top: 0;
@@ -125,8 +125,12 @@ nav a:hover {
 
 /* Hvert pip-blok */
 .pip-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
   padding: 10px 0;               /* luft omkring indholdet */
   border-bottom: 1px solid #e6e6e6;
+
 }
 
 /* Fjern streg efter sidste */
@@ -134,6 +138,15 @@ nav a:hover {
   border-bottom: none;
 }
 
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+pip-content{
+  flex: 1;
+}
 /* Typografi */
 .username {
   font-weight: 700;

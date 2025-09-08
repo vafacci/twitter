@@ -12,6 +12,10 @@ document.getElementById("pipForm").addEventListener("submit", (event) => {
   // Klon template
   const pipFrag = document.getElementById("piptemplate").content.cloneNode(true);
 
+  const seed = Math.random().toString(36).substring(2, 10); 
+  const avatarUrl = `https://api.dicebear.com/9.x/notionists/svg?seed=${seed}`;
+  pipFrag.querySelector(".avatar").src = avatarUrl;
+
   // Sæt @ foran brugernavn + brug nye klassenavne
   pipFrag.querySelector(".username").textContent = `@${name}`;
   pipFrag.querySelector(".message").textContent = pipText;

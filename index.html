@@ -30,9 +30,9 @@
 
         <input name="name" id="usernameInput"  placeholder="Skriv dit brugernavn..."/>
 
-        <label>Pip</label>
+        <label for="pipInput">Pip</label>
 
-        <input id="pipInput" placeholder="Hvad har du på hjertet..." required />
+        <input name="pipInput" id="pipInput" placeholder="Hvad har du på hjertet..." required />
         
         <button type="submit">Send</button>
       </form>
@@ -47,6 +47,7 @@
 
     <template id="piptemplate">  
       <div class="pip-container">
+        <img class="avatar" src="" alt="avatar">
         <p class="username">brugernavn</p>
         <p class="message">Her kommer pip-teksten...</p> 
       </div> 
