@@ -96,6 +96,7 @@ nav a:hover {
   width: var(--post);
   height: 100vh;
   padding: 12px;
+  margin-top: 15px;
   box-sizing: border-box;
   background:#fff;
   border-right: 1px solid #eee;
@@ -117,8 +118,13 @@ nav a:hover {
 
 .post form{ display:flex; gap:8px; }
 .post input{ flex:1; padding:10px; border:1px solid #ddd; border-radius:8px; }
-.post button{ padding:10px 14px; border:0; border-radius:8px; cursor:pointer; }
+.post button{ padding:10px 10px; border:0; border-radius:8px; cursor:pointer;}
 
+.papirflyver{
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+}
 
 #feed {
   max-width: 520px;              /* valgfrit: gør linjelængden rar */
