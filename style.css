@@ -31,7 +31,7 @@ body{ margin:0; overflow:hidden; }
   border-bottom: 1px solid #e5e5e5;
   padding: 12px 0;
 }
-#pipForm {
+#pip-1 {
   display: flex;
   gap: 8px;
   margin-bottom: 20px;
@@ -155,12 +155,17 @@ pip-content{
   flex: 1;
 }
 /* Typografi */
-.username {
+
+.ID{
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+.user {
   font-weight: 700;
   margin: 0 0 4px 0;
 }
 
-.message {
+.msg {
   margin: 0;
   line-height: 1.5;
   color: #444;
