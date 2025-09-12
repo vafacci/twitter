@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--Navigationsbaren sammen med logo-->
     <aside class="nav">
       <div class="logo">
         <img src="./img/twitter_white.svg" alt="pipper_logo" />
@@ -23,6 +24,7 @@
       </nav>
     </aside>
 
+    <!--Formularen til at lave et post opslag-->
     <main class="post">
       <form id="pipForm">
         <label for="name">Name</label>
@@ -35,32 +37,57 @@
 
         <label for="pipInput">Pip</label>
 
+        <!--En tæller til karakterne i et opslag-->
         <div class="taeller-container">
           <textarea
             name="pipInput"
             id="pipInput"
             placeholder="Hvad har du på hjertet..."
-            maxlength="255" required
+            maxlength="255"
+            required
           ></textarea>
           <span id="taeller">0 / 255</span>
         </div>
-        <button type="submit"><img class="papirflyver" src="img/send-2.svg" alt="send"></button>
+
+        <!--Sende knap til at sende et opslag til feedet-->
+        <button type="submit">
+          <img class="papirflyver" src="img/send-2.svg" alt="send" />
+        </button>
       </form>
     </main>
 
+    <!--Feedet, hvor man kan se de opslag en har skrevet-->
     <section class="feed" id="feed">
       <h1>Feed</h1>
       <div id="piplist"></div>
     </section>
 
+    <!--Kassen hvor opslaget ligger i sammen med avatar og en slet knap-->
     <template id="piptemplate">
       <div class="pip-container">
         <img class="avatar" src="" alt="avatar" />
         <p class="username">brugernavn</p>
         <p class="message">Her kommer pip-teksten...</p>
-        <button class="slette_knap"><img src="img/trash-2.svg" alt="slette_knap"></button>
+
+        <!--Slet knap, hvor en kan slette sit opslag, hvis de har fortrut opslaget-->
+        <button class="slette_knap">
+          <img src="img/trash-2.svg" alt="slette_knap" />
+        </button>
       </div>
     </template>
+
+    <!-- Trend sektionen, hvor du har muligheden til at se hashtags som trender i øjeblikket-->
+    <section class="trends">
+      <h2>What's happening?</h2>
+      <ul>
+        <li>#denstorebagedyst2025</li>
+        <li>#københavn</li>
+        <li>#fashionweek2025</li>
+        <li>#webudvikling</li>
+        <li>#monsertadeliciosa</li>
+        <li>#vildmeddans</li>
+      </ul>
+    </section>
 
     <script src="script.js"></script>
   </body>

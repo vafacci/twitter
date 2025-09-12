@@ -7,6 +7,8 @@ document.getElementById("pipForm").addEventListener("submit", (event) => {
   const pipText = document.getElementById("pipInput").value.trim();
 
   // Tjek om begge felter er udfyldt
+
+  // Tjek om begge felter er udfyldt
   if (!name || !pipText) {
     alert("Udfyld både navn og pip."); // Vis besked hvis noget mangler
     return; // Stop funktionen
